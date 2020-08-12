@@ -1,0 +1,89 @@
+$primary-color: white;
+
+.homepage {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 128, 128, 0.92);
+  }
+
+  .hero-area {
+    padding: 15%;
+    height: 30%;
+    overflow: hidden;
+
+    background: url(bookshelf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .headline {
+    position: relative;
+    margin-top: 5%;
+    width: 75%;
+    color: $primary-color;
+    z-index: 1;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .subtitle {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  .homepage {
+    .hero-area {
+      padding: 15%;
+    }
+  }
+
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .homepage {
+    .hero-area {
+      padding: 10%;
+    }
+  }
+}
+
+@media (min-width: 1420px) {
+  .homepage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+
+    .hero-area {
+      margin: 5%;
+      border-radius: 10px;
+      height: 90%;
+
+      .headline {
+        font-size: 4.75rem;
+        margin-top: 12%;
+      }
+
+      .subtitle {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        color: $primary-color;
+        margin-top: 3%;
+        width: 70%;
+      }
+    }
+  }
+}
