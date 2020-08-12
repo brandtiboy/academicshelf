@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 
+import SignIn from "../../components/signin-signup/signInSignUp.component";
+
 import "./homepage.styles.scss";
 
 class HomePage extends React.Component {
@@ -20,7 +22,7 @@ class HomePage extends React.Component {
           </p>
           <div className='overlay'></div>
         </div>
-        <div>Test</div>
+        <SignIn />
       </div>
     );
   }

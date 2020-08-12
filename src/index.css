@@ -9,8 +9,19 @@ h1 {
   font-size: 1.875rem;
 }
 
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.1875rem;
+  color: #252525;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.125rem;
   line-height: 2rem;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9375rem;
 }
