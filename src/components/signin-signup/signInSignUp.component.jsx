@@ -55,13 +55,13 @@ class SignIn extends React.Component {
           />
 
           <CustomButton type='submit'>Log In</CustomButton>
-          <p>Or sign in with</p>
+          <p>eller login med</p>
           <GoogleButton onClick={signInWithGoogle}>
             <img src={icon} alt='Google' className='google-icon' />
-            Login with Google
+            Login med Google
           </GoogleButton>
           <p>
-            Don't have an account? <span>Sign Up</span>
+            Har du ikke en bruger? <span>Tilmeld dig gratis!</span>
           </p>
         </form>
       </div>
