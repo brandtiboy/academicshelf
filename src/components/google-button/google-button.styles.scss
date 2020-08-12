@@ -1,0 +1,18 @@
+.google-button {
+  min-width: 100%;
+  width: auto;
+  height: 64px;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgba(73, 132, 220, 0.5);
+  color: #75a6f0;
+  font-size: 1.125rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(207, 225, 251, 0.15);
+  }
+}
