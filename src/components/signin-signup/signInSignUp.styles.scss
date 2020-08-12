@@ -1,5 +1,13 @@
 .sign-in {
   padding: 15%;
+
+  p {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #535353;
+  }
 }
 
 @media (min-width: 1420px) {
