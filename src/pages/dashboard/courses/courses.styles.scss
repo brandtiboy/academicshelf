@@ -1,0 +1,25 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  grid-template-rows: 100px 1fr;
+
+  .box {
+    grid-area: -1/2;
+    margin: 2% 10% 0 10%;
+  }
+
+  .search-box {
+    grid-area: 1/2;
+    margin: 2% 0 0 10%;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #313131;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+}

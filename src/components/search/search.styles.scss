@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+
+  input {
+    width: 40%;
+    padding: 16px;
+    background: #f3f3f3;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    outline: none;
+
+    &::focus {
+      input[type="text"] {
+        display: none;
+      }
+    }
+  }
+}
+
+.results-container {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 150px;
+
+  .result-item {
+    position: relative;
+    margin: 0 80px 80px 0;
+
+    .image {
+      max-width: 150px;
+      min-height: 200px;
+      border-radius: 10px;
+      //border: 1px solid rgba(255, 128, 128, 0.92);
+    }
+
+    h6 {
+      max-width: 180px;
+      font-size: 0.85rem;
+      font-family: "Roboto", sans-serif;
+      margin-top: 10px;
+    }
+  }
+}

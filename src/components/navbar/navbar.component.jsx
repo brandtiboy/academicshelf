@@ -12,7 +12,7 @@ import "./navbar.style.scss";
 const NavBar = () => {
   return (
     <nav className='nav-wrapper'>
-      <Link to='/dashboard' className='brand-logo'>
+      <Link to='/courses' className='brand-logo'>
         <img src={logo} alt='Brand Logo' />
       </Link>
       <ul>
@@ -28,9 +28,11 @@ const NavBar = () => {
         </li>
       </ul>
       <ul className='bottom-links'>
+        {/*
         <li>
           <NavLink to='/'>Person</NavLink>
         </li>
+        */}
         <li className='log-out'>
           <NavLink to='/'>
             <FontAwesomeIcon icon={faSignOutAlt} className='icon' />
