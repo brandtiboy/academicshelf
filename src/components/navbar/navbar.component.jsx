@@ -17,12 +17,12 @@ const NavBar = () => {
       </Link>
       <ul>
         <li>
-          <NavLink to='/courses'>
+          <NavLink to='/courses' className='fancy-link'>
             <FontAwesomeIcon icon={faListUl} className='icon' /> Kurser
           </NavLink>
         </li>
         <li>
-          <NavLink to='/'>
+          <NavLink to='/' className='fancy-link'>
             <FontAwesomeIcon icon={faSearch} className='icon' /> Find bøger
           </NavLink>
         </li>
@@ -34,7 +34,7 @@ const NavBar = () => {
         </li>
         */}
         <li className='log-out'>
-          <NavLink to='/'>
+          <NavLink to='/' className='log-out-button'>
             <FontAwesomeIcon icon={faSignOutAlt} className='icon' />
           </NavLink>
         </li>
