@@ -22,7 +22,7 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/' className='fancy-link'>
+          <NavLink to='/discover' className='fancy-link'>
             <FontAwesomeIcon icon={faSearch} className='icon' /> Find bøger
           </NavLink>
         </li>
