@@ -3,6 +3,8 @@ import axios from "axios";
 
 import "./search.styles.scss";
 
+import Book from "../../pages/dashboard/book/book.component";
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
