@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./search.styles.scss";
 
-import Book from "../../pages/dashboard/book/book.component";
+//import Book from "../../pages/dashboard/book/book.component";
 
 class Search extends React.Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class Search extends React.Component {
   }
 
   fetchSearchResults = (updatedPageNo = "", query) => {
-    const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : "";
+    //const pageNumber = updatedPageNo ? `&page=${updatedPageNo}` : "";
     const searchUrl = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyCQCwJYzm8gZ7QTIJAjB_etRtFWKAZrYME`;
 
     if (this.cancel) {

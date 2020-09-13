@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Redirect } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListUl } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -8,8 +9,9 @@ import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import logo from "./logo.svg";
 
 import "./navbar.style.scss";
+import { auth } from "../../firebase/firebase.utils";
 
-const NavBar = () => {
+const NavBar = ({ currentUser }) => {
   return (
     <nav className='nav-wrapper'>
       <Link to='/courses' className='brand-logo'>
@@ -28,16 +30,17 @@ const NavBar = () => {
         </li>
       </ul>
       <ul className='bottom-links'>
-        {/*
-        <li>
-          <NavLink to='/'>Person</NavLink>
-        </li>
-        */}
-        <li className='log-out'>
-          <NavLink to='/' className='log-out-button'>
-            <FontAwesomeIcon icon={faSignOutAlt} className='icon' />
-          </NavLink>
-        </li>
+        {!currentUser ? (
+          <li className='log-out'>
+            <NavLink to='/' className='log-out-button'>
+              <FontAwesomeIcon
+                icon={faSignOutAlt}
+                className='icon'
+                onClick={() => auth.signOut()}
+              />
+            </NavLink>
+          </li>
+        ) : null}
       </ul>
     </nav>
   );

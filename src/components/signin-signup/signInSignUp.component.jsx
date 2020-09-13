@@ -56,12 +56,16 @@ class SignIn extends React.Component {
 
           <CustomButton type='submit'>Log In</CustomButton>
           <p>eller login med</p>
+
           <GoogleButton onClick={signInWithGoogle}>
             <img src={icon} alt='Google' className='google-icon' />
             Login med Google
           </GoogleButton>
           <p>
-            Har du ikke en bruger? <span>Tilmeld dig gratis!</span>
+            Har du ikke en bruger?{" "}
+            <a href='/'>
+              <span>Tilmeld dig gratis!</span>
+            </a>
           </p>
         </form>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 import "./book.component.scss";
 
 import NavBar from "../../../components/navbar/navbar.component";
-import Search from "../../../components/search/search.component";
+//import Search from "../../../components/search/search.component";
 
 class Book extends React.Component {
   render() {
