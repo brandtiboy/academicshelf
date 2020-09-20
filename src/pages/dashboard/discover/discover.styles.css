@@ -1,0 +1,32 @@
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 185px 1fr;
+      grid-template-columns: 185px 1fr;
+  -ms-grid-rows: 100px 1fr;
+      grid-template-rows: 100px 1fr;
+}
+
+.grid-wrapper .box {
+  -ms-grid-column: 2;
+  grid-area: -1/2;
+  margin: 2% 10% 0 10%;
+}
+
+.grid-wrapper .search-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  margin: 2% 0 0 10%;
+}
+
+.grid-wrapper h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #313131;
+}
+
+.grid-wrapper p {
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=discover.styles.css.map */

@@ -1,0 +1,80 @@
+.homepage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 128, 128, 0.92);
+}
+
+.homepage .hero-area {
+  padding: 15%;
+  height: 30%;
+  overflow: hidden;
+  background: url(bookshelf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage .headline {
+  position: relative;
+  margin-top: 5%;
+  width: 75%;
+  color: white;
+  z-index: 1;
+}
+
+.homepage .logo {
+  position: relative;
+  z-index: 2;
+}
+
+.homepage .subtitle {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .homepage .hero-area {
+    padding: 15%;
+  }
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .homepage .hero-area {
+    padding: 10%;
+  }
+}
+
+@media (min-width: 1420px) {
+  .homepage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .homepage .hero-area {
+    margin: 5%;
+    border-radius: 10px;
+    height: 90%;
+  }
+  .homepage .hero-area .headline {
+    font-size: 4.75rem;
+    margin-top: 12%;
+  }
+  .homepage .hero-area .subtitle {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-top: 3%;
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=homepage.styles.css.map */

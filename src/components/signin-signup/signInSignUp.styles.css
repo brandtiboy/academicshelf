@@ -1,0 +1,32 @@
+.sign-in {
+  padding: 15%;
+}
+
+.sign-in p {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #535353;
+}
+
+.sign-in p a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 5px;
+  color: #9580ff;
+}
+
+.sign-in .google-icon {
+  position: relative;
+  top: 4px;
+  margin-right: 22px;
+}
+
+@media (min-width: 1420px) {
+  .sign-in {
+    padding: 10%;
+    margin-top: 25%;
+  }
+}
+/*# sourceMappingURL=signInSignUp.styles.css.map */

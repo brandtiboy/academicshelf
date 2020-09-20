@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 import "./discover.styles.scss";
 
@@ -12,9 +13,11 @@ class Discover extends React.Component {
         <div className='nav-box'>
           <NavBar />
         </div>
-        <div className='search-box'>
-          <Search />
-        </div>
+        <Fade>
+          <div className='search-box'>
+            <Search />
+          </div>
+        </Fade>
         <div className='box'>
           <h1>Find bøger</h1>
         </div>

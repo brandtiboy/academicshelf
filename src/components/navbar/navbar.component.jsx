@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, Redirect } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListUl } from "@fortawesome/free-solid-svg-icons";
@@ -32,12 +32,12 @@ const NavBar = ({ currentUser }) => {
       <ul className='bottom-links'>
         {!currentUser ? (
           <li className='log-out'>
-            <NavLink to='/' className='log-out-button'>
-              <FontAwesomeIcon
-                icon={faSignOutAlt}
-                className='icon'
-                onClick={() => auth.signOut()}
-              />
+            <NavLink
+              to='/'
+              className='log-out-button'
+              onClick={() => auth.signOut()}
+            >
+              <FontAwesomeIcon icon={faSignOutAlt} className='icon' />
             </NavLink>
           </li>
         ) : null}
