@@ -8,7 +8,6 @@ import "./homepage.styles.scss";
 class HomePage extends React.Component {
   render() {
     return (
-      // Hero area for the homepage
       <div className='homepage'>
         <div className='hero-area'>
           <img src={logo} alt='logo' className='logo' />
