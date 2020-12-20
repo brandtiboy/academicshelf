@@ -32,13 +32,13 @@ const NavBar = ({ currentUser }) => {
       <ul className='bottom-links'>
         {!currentUser ? (
           <li className='log-out'>
-            <NavLink
+            <Link
               to='/'
               className='log-out-button'
               onClick={() => auth.signOut()}
             >
               <FontAwesomeIcon icon={faSignOutAlt} className='icon' />
-            </NavLink>
+            </Link>
           </li>
         ) : null}
       </ul>
